@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: #ccc;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+.main {
+  padding: 10%;
+}
+.game-area {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas: "cell-0 cell-1 cell-2 cell-3" "cell-4 cell-5 cell-6 cell-7" "cell-8 cell-9 cell-10 cell-11" "cell-12 cell-13 cell-14 cell-15";
+  width: 80vmin;
+  height: 80vmin;
+  margin: 0 auto;
+}
+.game-cell-15 {
+  grid-area: "cell-15";
+}
+.game-cell-14 {
+  grid-area: "cell-14";
+}
+.game-cell-13 {
+  grid-area: "cell-13";
+}
+.game-cell-12 {
+  grid-area: "cell-12";
+}
+.game-cell-11 {
+  grid-area: "cell-11";
+}
+.game-cell-10 {
+  grid-area: "cell-10";
+}
+.game-cell-9 {
+  grid-area: "cell-9";
+}
+.game-cell-8 {
+  grid-area: "cell-8";
+}
+.game-cell-7 {
+  grid-area: "cell-7";
+}
+.game-cell-6 {
+  grid-area: "cell-6";
+}
+.game-cell-5 {
+  grid-area: "cell-5";
+}
+.game-cell-4 {
+  grid-area: "cell-4";
+}
+.game-cell-3 {
+  grid-area: "cell-3";
+}
+.game-cell-2 {
+  grid-area: "cell-2";
+}
+.game-cell-1 {
+  grid-area: "cell-1";
+}
+.game-cell-0 {
+  grid-area: "cell-0";
+}
+.game-tile {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #595;
+  color: #fff;
+  font-size: 6.66666667vmin;
+  padding: .25em;
+  border: 5px groove #5d5;
+}
+.game-tile:empty {
+  background: none;
+  border: none;
+}

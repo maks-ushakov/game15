@@ -1,0 +1,15 @@
+.game-tile {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #595;
+	color: #fff;
+	font-size: @size/3;
+	padding: .25em;
+	border: 5px groove #5d5;
+	&:empty {
+		background: none;
+		border: none;
+	}
+}
