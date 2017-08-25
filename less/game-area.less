@@ -1,3 +1,4 @@
+@size: 20vmin;
 .game-area {
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
@@ -16,7 +17,7 @@
 
 .cell-generator(@n) when (@n >=0) {
 	.game-cell-@{n} {
-		@cell: "cell-@{n}";
+		@cell: ~"cell-@{n}";
 		grid-area: @cell;
 	}
 	.cell-generator((@n - 1));

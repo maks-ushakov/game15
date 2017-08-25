@@ -147,52 +147,52 @@ body {
   margin: 0 auto;
 }
 .game-cell-15 {
-  grid-area: "cell-15";
+  grid-area: cell-15;
 }
 .game-cell-14 {
-  grid-area: "cell-14";
+  grid-area: cell-14;
 }
 .game-cell-13 {
-  grid-area: "cell-13";
+  grid-area: cell-13;
 }
 .game-cell-12 {
-  grid-area: "cell-12";
+  grid-area: cell-12;
 }
 .game-cell-11 {
-  grid-area: "cell-11";
+  grid-area: cell-11;
 }
 .game-cell-10 {
-  grid-area: "cell-10";
+  grid-area: cell-10;
 }
 .game-cell-9 {
-  grid-area: "cell-9";
+  grid-area: cell-9;
 }
 .game-cell-8 {
-  grid-area: "cell-8";
+  grid-area: cell-8;
 }
 .game-cell-7 {
-  grid-area: "cell-7";
+  grid-area: cell-7;
 }
 .game-cell-6 {
-  grid-area: "cell-6";
+  grid-area: cell-6;
 }
 .game-cell-5 {
-  grid-area: "cell-5";
+  grid-area: cell-5;
 }
 .game-cell-4 {
-  grid-area: "cell-4";
+  grid-area: cell-4;
 }
 .game-cell-3 {
-  grid-area: "cell-3";
+  grid-area: cell-3;
 }
 .game-cell-2 {
-  grid-area: "cell-2";
+  grid-area: cell-2;
 }
 .game-cell-1 {
-  grid-area: "cell-1";
+  grid-area: cell-1;
 }
 .game-cell-0 {
-  grid-area: "cell-0";
+  grid-area: cell-0;
 }
 .game-tile {
   box-sizing: border-box;
