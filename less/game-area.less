@@ -16,7 +16,7 @@
 .cell-generator(15);
 
 .cell-generator(@n) when (@n >=0) {
-	.game-cell-@{n} {
+	[data-cell="@{n}"] {
 		@cell: ~"cell-@{n}";
 		grid-area: @cell;
 	}
