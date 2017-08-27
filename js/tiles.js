@@ -1,6 +1,7 @@
 ;(function (undefined) {
 	let emptyCell = 15;
-	let game = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0];
+	let gameStart = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0];
+	let gameState = [];
 
 	const gameArea = document.querySelector("#game");
 
@@ -11,15 +12,17 @@
 			let currentCell = target.dataset.cell;
 			let diff = Math.abs(currentCell - emptyCell);
 			if(diff === 4 || diff === 1 ) {
-				target.classList.remove(`game-cell-${currentCell}`);
+				change(currentCell, emptyCell, gameState);
 				target.dataset.cell = emptyCell;
-				target.classList.add(`game-cell-${emptyCell}`);
 				emptyCell = currentCell;
+
+				check();
 			}
 		}
 
 		if (target.dataset.action === "new") {
-			render(suffle(game), gameArea);
+			gameState = suffle(gameStart);
+			render(gameState, gameArea);
 		}
 	});
 
@@ -41,7 +44,12 @@
 	}
 
 	function check () {
-		
+		let finishFlag = true;
+		for(let i = 0; (i < gameState.length - 2) && finishFlag ; i++) {
+			finishFlag = (i === (gameState[i] - 1));
+		}
+		finishFlag &= (gameState[gameState.length-1] === 0);
+		if (finishFlag) alert("You have done it!!!")
 	}
 
 	function render (arr, target) {
@@ -51,7 +59,7 @@
 			if(arr[i] !== 0) {
 				let tile = document.createElement('div');
 				tile.dataset.cell = i;
-				tile.className = `game-tile game-cell-${i}`;
+				tile.className = `game-tile`;
 				tile.innerHTML = arr[i];
 				area.appendChild(tile);
 			} else {
